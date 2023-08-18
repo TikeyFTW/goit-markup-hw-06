@@ -639,7 +639,6 @@ img {
   padding-left: 16px;
   background-color: var(--navyblue);
   color: var(--white);
-  margin-right: 24px;
 }
 .newsletter-button {
   display: inline-flex;
@@ -666,4 +665,5 @@ img {
 }
 .newsletter-display {
   display: inline-flex;
+  gap: 24px;
 }
