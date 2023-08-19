@@ -597,9 +597,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px;
 }
 .modal-close-button {
-  margin: 24px 24px 24px 360px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: var(--cornflower);
@@ -669,19 +672,15 @@ img {
   gap: 24px;
 }
 .modal-paragraph {
-  width: 360px;
   color: var(--navyblue);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin-left: 24px;
   margin-bottom: 16px;
 }
-.modal-form {
-  margin-left: 24px;
-}
+
 .modal-label {
   color: var(--lightslate);
   font-size: 12px;
@@ -697,15 +696,14 @@ img {
   letter-spacing: 0.48px;
   padding-left: 38px;
   border: none;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  height: 40px;
 }
 .input-box {
   position: relative;
   margin-top: 4px;
   fill: var(--navyblue);
-  border: 1px solid var(--navyblue-modal);
-  width: 360px;
-  height: 40px;
-  border-radius: 4px;
 }
 .input-svg {
   position: absolute;
@@ -713,8 +711,9 @@ img {
   top: 50%;
   translate: 0 -50% 0;
 }
-.input-box:hover,
-.input-box:focus {
+.imput-box:hover,
+.imput-box:focus,
+.modal-imput:active {
   border-color: var(--iris);
   fill: var(--iris);
 }
