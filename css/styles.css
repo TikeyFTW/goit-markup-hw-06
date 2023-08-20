@@ -695,25 +695,53 @@ img {
   line-height: 2;
   letter-spacing: 0.48px;
   padding-left: 38px;
-  border: none;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
   height: 40px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-box {
   position: relative;
   margin-top: 4px;
   fill: var(--navyblue);
+  width: 360px;
 }
 .input-svg {
   position: absolute;
   left: 16px;
   top: 50%;
   translate: 0 -50% 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.imput-box:hover,
-.imput-box:focus,
-.modal-imput:active {
-  border-color: var(--iris);
+
+.modal-input:focus,
+.modal-input-textarea:focus {
   fill: var(--iris);
+  border-color: var(--iris);
+}
+.modal-input:focus + .input-svg {
+  fill: var(--iris);
+}
+.modal-form {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.modal-input-textarea {
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  padding-left: 16px;
+  padding-top: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  height: 120px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
 }
