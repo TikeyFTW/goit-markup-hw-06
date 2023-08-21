@@ -798,6 +798,5 @@ img {
   padding: 16px 32px;
 }
 .modal-button-wrapper {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
