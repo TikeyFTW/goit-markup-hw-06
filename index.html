@@ -466,6 +466,7 @@
                 type="text"
                 name="username"
                 id="username"
+                required
               />
               <svg class="input-svg" width="18px" height="18px">
                 <use href="./css/icons.svg#icon-person"></use>
@@ -480,6 +481,9 @@
                 type="tel"
                 name="userphone"
                 id="userphone"
+                pattern="[0-9+]+"
+                title="Enter only numbers and the plus sign."
+                required
               />
               <svg class="input-svg" width="18px" height="24px">
                 <use href="./css/icons.svg#icon-phone"></use>
@@ -494,6 +498,7 @@
                 type="email"
                 name="useremail"
                 id="useremail"
+                required
               />
               <svg class="input-svg" width="18px" height="24px">
                 <use href="./css/icons.svg#icon-email"></use>
@@ -518,6 +523,7 @@
               name="user-privacy"
               value="true"
               class="modal-check visually-hidden"
+              required
             />
             <label for="user-privacy" class="modal-fake-checkbox"
               ><span class="modal-check-icon">
